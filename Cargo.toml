@@ -1,0 +1,8 @@
+[package]
+name = "lyra"
+version = "0.1.0"
+authors = ["Ariel De Ocampo <arielmakestuff@gmail.com>"]
+
+[dependencies]
+siminau-rpc = { repo = "https://github.com/siminau/siminau-rpc",
+		branch = "develop" }
