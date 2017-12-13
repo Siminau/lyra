@@ -4,5 +4,34 @@ version = "0.1.0"
 authors = ["Ariel De Ocampo <arielmakestuff@gmail.com>"]
 
 [dependencies]
-siminau-rpc = { repo = "https://github.com/siminau/siminau-rpc",
-		branch = "develop" }
+
+# Siminau deps
+siminau-rpc = { git = "https://github.com/siminau/siminau-rpc", branch = "develop" }
+
+# Tokio deps
+futures = "0.1"
+tokio-core = "0.1"
+
+# General deps
+failure = "0.1"
+
+[dev-dependencies]
+proptest = "0.3"
+
+# --------------------------
+# Integration dependencies
+# --------------------------
+
+# MsgPack deps
+serde = "1.0"
+rmp = "0.8"
+rmp-serde = "0.13"
+
+# Tokio deps
+bytes = "0.4"
+tokio-io = "0.1"
+tokio-service = "0.1"
+
+[dev-dependencies.rmpv]
+version = "0.4"
+features = ["with-serde"]
