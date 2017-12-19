@@ -1,4 +1,4 @@
-# lyra
+# stefu
 
 A library that defines types and functions that can be used to implement
 general siminau servers.
@@ -14,14 +14,14 @@ to download and run the installer.
 
 [1]: https://www.rustup.rs
 
-### Run lyra
+### Run stefu
 
 Once Rust is installed, simply enter these commands to confirm that the test
 suite succeeds:
 
 ```shell
-$ git clone https://github.com/siminau/lyra.git
-$ cd lyra
+$ git clone https://github.com/siminau/stefu.git
+$ cd stefu
 $ cargo test
 ```
 
