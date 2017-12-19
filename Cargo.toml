@@ -9,8 +9,13 @@ authors = ["Ariel De Ocampo <arielmakestuff@gmail.com>"]
 siminau-rpc = { git = "https://github.com/siminau/siminau-rpc", branch = "develop" }
 
 # Tokio deps
+bytes = "0.4"
 futures = "0.1"
 tokio-core = "0.1"
+tokio-io = "0.1"
+
+# MsgPack deps
+rmpv = "0.4"
 
 # General deps
 failure = "0.1"
@@ -28,10 +33,8 @@ rmp = "0.8"
 rmp-serde = "0.13"
 
 # Tokio deps
-bytes = "0.4"
-tokio-io = "0.1"
 tokio-service = "0.1"
 
-[dev-dependencies.rmpv]
-version = "0.4"
-features = ["with-serde"]
+# [dev-dependencies.rmpv]
+# version = "0.4"
+# features = ["with-serde"]

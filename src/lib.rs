@@ -19,18 +19,33 @@
 
 // Third-party externs
 
-#[macro_use] extern crate failure;
+extern crate bytes;
+// #[macro_use]
+extern crate failure;
 extern crate futures;
+extern crate rmpv;
 extern crate tokio_core;
+extern crate tokio_io;
 
 // Local externs
 
-#[macro_use] extern crate siminau_rpc;
+// #[macro_use]
+extern crate siminau_rpc;
 
 // Test externs
 
 #[cfg(test)]
-#[macro_use] extern crate proptest;
+// #[macro_use]
+extern crate proptest;
+
+
+// ===========================================================================
+// Modules
+// ===========================================================================
+
+
+pub mod codec;
+pub mod server;
 
 
 // ===========================================================================

@@ -23,8 +23,8 @@ extern crate tokio_io;
 extern crate tokio_service;
 
 // Local externs
+extern crate lyra;
 #[macro_use] extern crate siminau_rpc;
-
 
 // ===========================================================================
 // Imports
@@ -54,11 +54,11 @@ use tokio_service::{NewService, Service};
 
 // Local imports
 
-use siminau_rpc::codec::MsgPackCodec;
+use lyra::server::{shutdown, Server, ServerMessage};
+use lyra::codec::MsgPackCodec;
 use siminau_rpc::core::{CodeConvert, CodeValueError, FromMessage, Message};
 use siminau_rpc::core::request::{RequestMessage, RpcRequest, ToRequestError};
 use siminau_rpc::core::response::{ResponseMessage, RpcResponse};
-use siminau_rpc::server::{shutdown, Server, ServerMessage};
 
 
 // ===========================================================================
